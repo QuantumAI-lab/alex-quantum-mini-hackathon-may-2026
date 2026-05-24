@@ -1,0 +1,82 @@
+PS C:\Users\Ayham> & C:/Users/Ayham/AppData/Local/Programs/Python/Python312/python.exe e:/hybrid_qnn_only.py
+Running on 20 CPU cores
+
+[1/3] Loading and preprocessing dataset...
+  Samples : 373  |  Features : 11
+  Classes : Non-demented=190, Demented=183
+
+[2/3] Analysing quantum circuit...
+
+
+────────────────────────────────────────────────────
+  QUANTUM CIRCUIT ANALYSIS
+────────────────────────────────────────────────────
+  Qubits           : 4
+  Feature map      : ZZFeatureMap  (reps=1)
+  Ansatz           : RealAmplitudes (reps=2, linear)
+  Trainable params : 12
+  Circuit depth    : 24
+  Total gates      : 44
+  Gate breakdown   : {'cx': 18, 'u3': 16, 'u': 10}
+────────────────────────────────────────────────────
+
+[3/3] Running 5-Fold Cross-Validation (Hybrid QNN only)...
+
+════════════════════════════════════════════════════
+  FOLD 1/5
+════════════════════════════════════════════════════
+
+  Epoch 10/30 | Avg Loss: 0.4577
+  Epoch 20/30 | Avg Loss: 0.3041
+  Epoch 30/30 | Avg Loss: 0.2420
+
+  Fold 1 Result → Acc: 94.67%  F1: 0.9474  AUC: 0.9794
+
+════════════════════════════════════════════════════
+  FOLD 2/5
+════════════════════════════════════════════════════
+
+  Epoch 10/30 | Avg Loss: 0.5501
+  Epoch 20/30 | Avg Loss: 0.3962
+  Epoch 30/30 | Avg Loss: 0.3080
+
+  Fold 2 Result → Acc: 96.00%  F1: 0.9577  AUC: 0.9829
+
+════════════════════════════════════════════════════
+  FOLD 3/5
+════════════════════════════════════════════════════
+
+  Epoch 10/30 | Avg Loss: 0.5514
+  Epoch 20/30 | Avg Loss: 0.3475
+  Epoch 30/30 | Avg Loss: 0.2296
+
+  Fold 3 Result → Acc: 89.33%  F1: 0.8824  AUC: 0.9068
+
+════════════════════════════════════════════════════
+  FOLD 4/5
+════════════════════════════════════════════════════
+
+  Epoch 10/30 | Avg Loss: 0.5199
+  Epoch 20/30 | Avg Loss: 0.3380
+  Epoch 30/30 | Avg Loss: 0.2772
+
+  Fold 4 Result → Acc: 94.59%  F1: 0.9412  AUC: 0.9613
+
+════════════════════════════════════════════════════
+  FOLD 5/5
+════════════════════════════════════════════════════
+
+  Epoch 10/30 | Avg Loss: 0.4788
+  Epoch 20/30 | Avg Loss: 0.3171
+  Epoch 30/30 | Avg Loss: 0.2454
+
+  Fold 5 Result → Acc: 95.95%  F1: 0.9565  AUC: 0.9627
+
+════════════════════════════════════════════════════
+  HYBRID QNN — FINAL RESULTS (5-Fold Avg)
+════════════════════════════════════════════════════
+  Accuracy : 94.11%  (+/- 2.46%)
+  F1-Score : 0.9370      (+/- 0.0280)
+  AUC      : 0.9586      (+/- 0.0273)
+════════════════════════════════════════════════════
+PS C:\Users\Ayham>
